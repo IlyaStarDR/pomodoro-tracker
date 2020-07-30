@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pomodoro Tracker</title>
+	<link rel="stylesheet" href="css/normilaze.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="logo-wrapper">
+		<div class="logo-container">
+			<i class="fa fa-clock-o" aria-hidden="true"></i>
+			<span>work tracker</span>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="row">
+			<div class="time-view">
+				<span class="timer">25:00</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="form__group field">
+				<input type="input" class="form__field" placeholder="Enter your task..." name="task" id='task' required />
+				<label for="task" class="form__label">Enter your task...</label>
+			  </div>
+		</div>
+
+		<div class="row">
+			<div class="set-time">
+				<div class="time-item">
+					<label for="">Work Duration</label>
+					<input type="text" placeholder="25">
+				</div>
+				<div class="time-item">
+					<label for="">Break Duration</label>
+					<input type="text" placeholder="5">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="buttons">
+				<a class="start button">Start</a>
+				<a class="stop button">Stop</a>
+				<a class="reset button">Reset</a>
+			</div>
+		</div>
+	</div>	
+	<div id="info-wrapper">
+		<span>Your Sessions</span>
+		<ul id="sessions-list">
+			<li id="sessions-placeholder" class="hidden"><i class="fa fa-check-square-o" aria-hidden="true"></i>Nothing to see yet...</li>
+		</ul>
+	</div>	
+</body>
+</html>
