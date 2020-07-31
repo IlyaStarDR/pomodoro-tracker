@@ -67,13 +67,18 @@ body {
 	height: 180px;
 	margin: 0 auto;
 	text-align: center;
-}
 
-.time-view .timer {
+	/* used to be span */
 	color:  #333;
 	font-size: 140px;
 	font-family: 'Orbitron', Arial, Helvetica, sans-serif;
 }
+
+/* .time-view .timer {
+	color:  #333;
+	font-size: 140px;
+	font-family: 'Orbitron', Arial, Helvetica, sans-serif;
+} */
 
 
 .task input {

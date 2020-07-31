@@ -18,13 +18,13 @@
 	</div>
 	<div class="wrapper">
 		<div class="row">
-			<div class="time-view">
-				<span class="timer">25:00</span>
+			<div class="time-view" id="timer">
+				<span class="timer" >25:00</span>
 			</div>
 		</div>
 		<div class="row">
 			<div class="form__group field">
-				<input type="input" class="form__field" placeholder="Enter your task..." name="task" id='task' required />
+				<input type="input" class="form__field" placeholder="Enter your task..." name="task" id='pomodoro-clock-task' />
 				<label for="task" class="form__label">Enter your task...</label>
 			  </div>
 		</div>
@@ -33,20 +33,20 @@
 			<div class="set-time">
 				<div class="time-item">
 					<label for="">Work Duration</label>
-					<input type="text" placeholder="25">
+					<input type="number" placeholder="25" id="input-work-duration">
 				</div>
 				<div class="time-item">
 					<label for="">Break Duration</label>
-					<input type="text" placeholder="5">
+					<input type="number" placeholder="5" id="input-break-duration">
 				</div>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="buttons">
-				<a class="start button">Start</a>
-				<a class="stop button">Stop</a>
-				<a class="reset button">Reset</a>
+				<a class="start button" id="btn-start">Start</a>
+				<a class="stop button" id="btn-pause">Stop</a>
+				<a class="reset button" id="btn-stop">Reset</a>
 			</div>
 		</div>
 	</div>	
@@ -56,5 +56,16 @@
 			<li id="sessions-placeholder" class="hidden"><i class="fa fa-check-square-o" aria-hidden="true"></i>Nothing to see yet...</li>
 		</ul>
 	</div>	
+
+
+	<!-- delete -->
+	<div id="pomodoro-info">
+		<h3>Your Sessions </h3>
+		<ul id="pomodoro-sessions">
+		</ul>
+	</div>
+
+
+	<script src="js/index.js"></script>
 </body>
 </html>
