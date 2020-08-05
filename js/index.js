@@ -102,7 +102,6 @@ const displayCurrentTimeLeftInSession = () => {
     let result = "";
     const seconds = secondsLeft % 60;
     const minutes = parseInt(secondsLeft / 60) % 60;
-    // let hours = parseInt(secondsLeft / 3600);
 
     function addLeadingZeros(time) {
         return time < 10 ? `0${time}` : time
@@ -184,12 +183,13 @@ const displaySessionLog = (type) => {
     }
     
 
-    // let elapsedTime = parseInt(timeSpentInCurrentSession / 60)
+    // let elapsedTime = parseInt(timeSpentInCurrentSession / 60);
     // elapsedTime = elapsedTime > 0 ? elapsedTime : '< 1';
   
     // const text = document.createTextNode(
     //   `${sessionLabel} : ${elapsedTime} min`
-    // )
+    // );
+    
     const text = document.createTextNode(sessionLabel);
 
 
